@@ -6,7 +6,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 
 # [Optional] Uncomment this section to install additional OS packages.
 # These are required to run playwright properly
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+RUN apt-get update && 
     && apt-get -y install --no-install-recommends \
     gconf-service libxext6 libxfixes3 libxi6 libxrandr2 \
     libxrender1 libcairo2 libcups2 libdbus-1-3 libexpat1 \
